@@ -171,6 +171,11 @@ img {
 .current {
   color: var(--decorative-color);
 }
+.current::after {
+  content: '';
+  background: var(--decorative-color);
+  border-radius: 2px;
+}
 /* ------------- */
 
 /* -page main-  */
@@ -291,6 +296,26 @@ img {
 .works-lst {
   display: flex;
   gap: 30px;
+}
+.works-lst .item {
+  position: relative;
+}
+.works-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background);
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 90px;
+  margin: 0;
 }
 /* ------------- */
 
